@@ -1,0 +1,147 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Wingdings;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\b\f0\fs34\lang9 SRS(Software Requirement Specifications)-Cab Booking System\par
+\fs32 Introduction\par
+\ulnone\b0\fs22 Cab booking service is a major transport service provided by the various transportoperators in a particular city. Mostly peoples use cab service for their daily transportations need. The company must be a registered and fulfils all the requirementsand security standards set by the transport department. In the current system, the client first contacts with the transport company for getting transport service. The company then books the vehicle for him on the requested date and time and then sends the vehicle to his place at the time. The Online Cab booking system is the online service which will automate the process of booking a cab and will facilitate both the client and the company with reduced time and efforts. First the company will register his vehicles and the vehicles to the system. Then the client will request for booking a vehicle on his required date and time, providing all necessary information. The fare will be calculated and client should confirm it. Then the employee will serve the client on the specific date and time. Finally the client will have an opportunity to give a feedback for the service he got. The company can check it and take appropriate action for the future improvements.\par
+\b\fs28 Project Scope :\fs22\par
+\b0 This project\rquote s aim is to automate the system, calculating the fare, collecting fare, collecting all necessary information of the client and then serve the client. The data used by the system is stored in a database that will be the centre of all information held clients andemployees and the base for the remainder of the process after the initial application hasbeen made. This enables things to be simplified and considerably quickened, making the jobs of the people involved easier. It supports the current process but centralizes it and makes it possible for decisions to be made earlier and easier way. \par
+\b\fs28 Goals :\b0\fs22\par
+ The main goal of the system is to automate the process carried out in the organization with   improved performance and realize the vision of online booking.\par
+ Manage large number of client details. \par
+ Manage all details of clients who registered and requested for getting the service. \par
+ Create employee accounts and maintain the data\rquote s effectively. \f1\par
+\f0  View all the details of the clients and employees. \par
+ Showing available vehicles to book for the client.\f1\'f1\par
+\f0  Calculating and showing the fare to client before booking.\par
+ Create the statistical reports to facilitate the finance department work. \f1\'f1\f0 Getting the     feedback from the client to facilitate future improvement.\par
+\ul\b\fs28 ACTORS\par
+\ulnone\b0\fs22 1. User\par
+2. Admin\par
+3. Cab Owner\ul\b\fs28\par
+FUNCTIONALITIES\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\fs22 Admin login\ul\b\par
+{\pntext\f2\'B7\tab}\ulnone\b0 User login and registration\ul\b\par
+{\pntext\f2\'B7\tab}\ulnone\b0 User profile\ul\b\par
+{\pntext\f2\'B7\tab}\ulnone\b0 Cab owner login and registration\ul\b\par
+{\pntext\f2\'B7\tab}\ulnone\b0 Cab searching\ul\b\par
+{\pntext\f2\'B7\tab}\ulnone\b0 Cab booking\ul\b\par
+{\pntext\f2\'B7\tab}\ulnone\b0 Adding details of cab( By Cab owner)\ul\b\par
+{\pntext\f2\'B7\tab}\ulnone\b0 Update Cab details (By Cab owner)\ul\b\par
+
+\pard\sa200\sl276\slmult1\par
+\fs28 User SRS of Cab Management System\ulnone\b0\par
+\fs22\par
+\b 1. New user sign up page\b0\par
+New users must be able to register by entering their first name , last name, email id and password. \par
+First name and last name :   First name and last name should have a minimum of one word length to maximum of 20.  Alphabets are only accepted. The icon must turn red if text other than alphabets are entered.\par
+ Email :  The email should be unique and valid with proper extensions. The icon must turn red until its a valid email id.\par
+ Password :  The password must have a minimum length(6) and include special characters, uppercase, lowercase and numbers. There must be a tab showing confirm new password and an error message must pop up if both emails are different. \par
+Confirm password : The password entered in this tab must match with the previous password .If not an error message showing "password not matching" must appear.\par
+Captcha :  Authentication using  captcha is needed. Captcha should include both alphabets and numerals. An error message should pop up if entered captcha is wrong.\par
+The next button to navigate to the login page. \par
+\b 2. Login page\par
+\b0  User should be able to login providing their email, phone number and password.\par
+Email :  The email must be unique and validation must be done.The icon must turn red until its a valid email id.\par
+Contact number :  The phone number should have maximum of 10 numbers along with the country code.The password must have a minimum length(6) and include special characters, uppercase, lowercase and numbers.\par
+Password :   Password and submit button should be included. If password entered  is wrong alert user to change password , else sign in user .Reset password and forgot password is also included.\b\par
+2.   Device location must be turned on while login\par
+\b0  There should be a prompt showing when the location should be on like "Allowed all the time", "Allowed while using  the app" and "Don't allow".\par
+\b 3. Terms and policy acceptance\par
+\b0  The user must be able to accept the company policy by clicking the I Agree options.\par
+\b 4. User must fill a detailed form to register for services\b0\par
+ The user need to enter their first name , last name and  gender .\par
+Name :  The first name and last name should have minimum  length of 1 to maximum of 20 and must be alphabets. The icon must turn red if text other than alphabets are entered.\par
+Gender :  Gender should have option like male, female and other options.When any of the field is not filled it should show *required message. Next button must navigate to the next page.\par
+\b 5.   Cab Search Facility\par
+\b0  The user should be able to enter the pickup point, destination and type the ride they want. Pick up Point : The user should be able to enter text as alphabets ,numerals or any special characters, minimum of one to maximum of 20 word length. Suggestion list based on the entered text must appear.If no match, it should show "No result found".\par
+Destination : The user should be able to enter text as alphabets ,numerals or any special characters, minimum of one to maximum of 20 word length. Suggestion list based on the entered text must appear.If no match, it should show "No result found".\par
+Confirm button :  There should be a confirm option to match the driver nearby. When entering pickup point and destination suggestions need to be shown based on the users current location.\par
+Clear option:    A clear icon button for clearing the text entered in search bar.\par
+Search icon :  A search icon that will search for cab by the information entered and search for the closest match with preview details like image, name, route , rate and time. If no match, it should show "No result found".\par
+Type of trip:  The website needs to integrate a feature that helps in planning the trip as per needs. Options like a one-way trip, local trip, self-drive, international trip, and outstation trip are needed.\par
+\b 6. Cab booking \b0\par
+The user after selecting the cab and the type of trip needed , must be able to book the cab. \par
+Cab details :  The page must show details such as cab name, image, route, time  and the rate. Based on these details the user must be able to select a cab.\par
+Confirm booking :  There should be a confirm booking icon that stores the information temporarily and navigate to the payment page. \par
+Cancel :  A cancel booking icon is needed which navigate back to the cab details page if the user is not satisfied with current selection.\par
+ \b 7. Payment option\b0\par
+The user must be able to pay for the ride either through liquid cash or through online payment modes like credit card or UPI\par
+Debit/credit option :  A text field for getting user debit/ credit card number, on entering the number it should automatically detect the card company, and if the number is wrong, it should show a error message with red colour like "Invalid card number". A text field for getting user debit/ credit card expiry as date format mm/yy, on entering the date it should automatically detect if the date is wrong or not,if it's wrong it should show a error message with red colour like "Invalid card expiry". A text field for getting user debit/ credit card cvc as number, on entering the date it should automatically detect if the cvc is wrong or not.if it's wrong it should show a error message with red colour like "Invalid cvc".\par
+UPI :  A text field to enter the users UPI's . If not valid send "UPI is invalid" message.\par
+Submit :  A submit button which on pressed will check if all the informations are correct and if yes, it will make the payment and the user will get a preview of the invoice containing details like: username, user email, cab name, cab route, cab time, amount and the user can download it as pdf or can close the invoice which will navigate the user back to the cab details page, else if the details are not correct it will show a error message like "Wrong credentials", or if there is any issue in payment it will show error message like "Payment failed try again'. \par
+\b 8. Confirmation page\par
+\b0 The users must be able to see details of the cab they booked like the cab name , image, pickup and destination , time of pickup , total trip time, driver details and  the amount they paid . If every thing is okay the user can navigate to "track my cab" page.\par
+Cancellation :  If the user need to cancel the cab booking , cancellation option is to be provided. If already done payment, there must be a refund option based on the choosen payment option. Money refund to the original payment method is to be done within a timespan of maximum 5 days .\par
+\b 9. Cab tracker\b0\par
+ The user must be able to track the current location of the driver so that he can wait at the pickup point. Live updation is required. Contact details of the booked driver is to be provided.\par
+\b 10. Rate the trip\par
+\b0 The user must be able to rate the trip and add a feedback about the ride. The ratings are rated by five stars .\par
+Comment box :  Comment box holds a minimum of 1 word to maximum 30. Alphabets, numerals or special characters are acceptables.\par
+\b 11. Customer service\par
+\b0 The user must have options to connect with the customer services. The contact information and email information of the admin need to be provided. While clicking the contact number the page must redirect to call log page.\par
+\par
+\ul\b\fs28 Admin SRS of Cab Management System\ulnone\b0\par
+\fs22\par
+\b 1. Login page\par
+\b0  Admin should be able to login providing their email, phone number and password.\par
+ Email :  The email must be unique and validation must be done.The icon must turn red until its a valid email id.\par
+Contact number :  The phone number should have maximum of 10 numbers along with the country code. The password must have a minimum length(6) and include special characters, uppercase, lowercase and numbers.\par
+Password :   Password and submit button should be included. If password entered  is wrong alert user to change password , else sign in user . Reset password and forgot password is also included.\par
+\b 2. Perform listing out of users:\par
+\b0 The admin should be able to see the list of current users and  their personal information like name, gender, contact information, email address .Admin must be able to edit the informations based on the needs.\par
+\b 3. Perform listing out of Employees \b0 :\par
+The administrator must be able to select and update the roster a week ahead based on the availability of each employees who further book their individual availability a week ahead.\par
+The license number, registration number, contact information and other personal details of the drivers must be visible to the admin and he must be able to make an update about it.\par
+\b 4.Cancellation and updation of ride:\par
+\b0 The admin should be able to cancel any rides to certain location and update about new ride location services. \par
+\b 5.Status of current rides :\par
+\b0 The admin should be able to view the current location of the drivers and contact them in case of any emergency.\par
+\b 6.Check feedbacks\b0 :\par
+The administrator must be able to check the feedback and ratings posted by the clients . \par
+\b 7.Send newsletters:\par
+\b0 The administrator shall be able to send the newsletters regarding new promotions if any.\par
+\b 8.Manage the accounts:\par
+\b0 The admin must be able to provide access to new users and block any unwanted user accounts.\par
+They shall be able to delete the employees details that are no longer working in the company\par
+\b 9.Finance :\par
+\b0 The admin must be able to manage the finance of the cab booking . Cab schedule details with fare shall be maintained. Fare changes depends on the time user books. The admin must be able to change the fare and update it according to the situations.\b\par
+\par
+\ul\fs28 Driver SRS of Cab Management System\ulnone\b0\fs22\par
+\b 1. New driver sign up page\b0\par
+New drivers must be able to register by entering their first name , last name, email id and password. \par
+First name and last name :   First name and last name should have a minimum of one word length to maximum of 20.  Alphabets are only accepted. The icon must turn red if text other than alphabets are entered.\par
+ Email :  The email should be unique and valid with proper extensions. The icon must turn red until its a valid email id.\par
+ Password :  The password must have a minimum length(6) and include special characters, uppercase, lowercase and numbers. There must be a tab showing confirm new password and an error message must pop up if both emails are different. \par
+Confirm password : The password entered in this tab must match with the previous password .If not an error message showing "password not matching" must appear.\par
+Captcha :  Authentication using  captcha is needed. Captcha should include both alphabets and numerals. An error message should pop up if entered captcha is wrong.\par
+The next button to navigate to the login page. \par
+\b 2. Login page\par
+\b0  Driver should be able to login providing their email, phone number and password.\par
+Email :  The email must be unique and validation must be done.The icon must turn red until its a valid email id.\par
+Contact number :  The phone number should have maximum of 10 numbers along with the country code.The password must have a minimum length(6) and include special characters, uppercase, lowercase and numbers.\par
+Password :   Password and submit button should be included. If password entered  is wrong alert user to change password , else sign in user . Reset password and forgot password is also included.\b\par
+3. First Time Drivers Should Complete Additional Verification Step and register for services.\par
+\b0 Driver should be able to register by providing their phone number, Licence Number, Vehicle Registration number.\par
+Address Details, Aadhar Number, PAN Number, cab type, RC Details and Pollution Certificate.\par
+Phone number : The phone number should have maximum of 10 numbers along with the country code.The password must have a minimum length(6) and include special characters, uppercase, lowercase and numbers.\par
+Licence Number : Licence number should be valid . It must accept alphabets, numerals and special characters. An error message must pop up if the entered number is not valid.\par
+Vehicle registration number :  Registration number should be valid . It must accept alphabets, numerals and special characters. An error message must pop up if the entered number is not valid.\par
+Address Details :  Their should be a minimum length of one word to maximum of 30. It must accept alphabets, numerals and special characters.\par
+RC details : RC details should be valid . It must accept alphabets, numerals and special characters. An error message must pop up if the entered number is not valid. Minimum length of one word and maximum length of 20.\par
+Pollution certificate :  Pollution certificate should be valid . It must accept alphabets, numerals and special characters.  An error message must pop up if the entered number is not valid.\par
+\b 4. A Verified Driver Can Access Profile Page.\par
+\b0 Update Email, Update his/her Personal Details ,Change His/her first name and last name change phone number , select a preferred Work location, change his preferred work location ,choose whether to accept bookings or not ,checks email is associated with any other accounts on email change ,email OTP verification ,checks phone number is associated with any other accounts on email change ,phone number OTP verification .\par
+\b 5. A Verified Driver Can Access Bookings Page and view his dashboard. Driver must be able to log out when needed.\par
+\b0 There should be a log out option to log out when needed.\b\par
+\par
+\par
+\par
+\b0\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
